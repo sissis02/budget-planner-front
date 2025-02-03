@@ -1,0 +1,64 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+
+.container {
+  min-width: 600px;
+    border: 2px solid $pale-dogwood;
+    border-radius: $radius;
+    border-collapse: collapse;
+
+  tr {
+    .actionsContainer {
+      display: none;
+    }
+
+    &:hover {
+      position: relative;
+      .actionsContainer {
+        position: absolute;
+        top: -10px;
+        right: -50px;
+        z-index: 2;
+        height: auto;
+        max-height: 80px;
+        padding: 12px 20px;
+        border: 1px solid $viva-magenta;
+        border-radius: $radius;
+        background-color: $ford-white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          color: $viva-magenta;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  th {
+    background-color: $pale-dogwood;
+    padding: 16px;
+    text-align: left;
+    font-size: 18px;
+
+    &:last-child {
+      width: 150px;
+    }
+  }
+
+  td {
+    height: 50px;
+    max-height: 50px;
+    padding-left: 16px;
+    text-transform: capitalize;
+    color: $gray-lilac;
+    border: 2px solid $pale-dogwood;
+  }
+
+  tfoot {
+    background-color: $pale-dogwood;
+    color: $viva-magenta;
+  }
+}

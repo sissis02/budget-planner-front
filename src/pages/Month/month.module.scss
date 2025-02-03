@@ -1,0 +1,17 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  // gap: 38px;
+  overflow-x: scroll;
+
+  main {
+    width: 100%;
+    // height: 100%;
+  }
+}

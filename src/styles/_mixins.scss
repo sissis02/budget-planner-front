@@ -1,0 +1,25 @@
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+@mixin regularFont {
+  font-family: "Alatsi", serif;
+  font-size: 16px;
+}
+
+@mixin btn {
+  width: 180px;
+  height: 55px;
+  background-color: $viva-magenta;
+  color: $ford-white;
+  outline: none;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+  font-family: "Alatsi", serif;
+  font-size: 24px;
+
+  &:hover {
+    background-color: $gray-lilac;
+  }
+}

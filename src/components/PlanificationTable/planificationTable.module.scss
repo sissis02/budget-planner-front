@@ -1,0 +1,37 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+
+.container {
+  min-width: 640px;
+    border: 2px solid $pale-dogwood;
+    border-radius: $radius;
+    border-collapse: collapse;
+
+  th {
+    background-color: $pale-dogwood;
+    padding: 16px;
+    text-align: left;
+    font-size: 18px;
+
+    &:nth-child(2) {
+      width: 110px;
+    }
+
+    &:last-child {
+      width: 150px;
+    }
+  }
+
+  td {
+    height: 50px;
+    max-height: 50px;
+    padding-left: 16px;
+    color: $gray-lilac;
+    border: 2px solid $pale-dogwood;
+  }
+
+  tfoot {
+    background-color: $pale-dogwood;
+    color: $viva-magenta;
+  }
+}

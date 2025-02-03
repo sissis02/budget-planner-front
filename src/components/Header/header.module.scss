@@ -1,0 +1,15 @@
+@import '@styles/variables';
+
+.container {
+  width: 100%;
+  height: auto;
+  // border: 2px solid black;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}

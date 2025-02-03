@@ -1,0 +1,34 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+
+  input {
+    @include regularFont;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    text-transform: capitalize;
+    background: $pale-dogwood;
+    color: $viva-magenta;
+    border: 1px solid $viva-magenta;
+    border-radius: $radius;
+    padding-left: 16px;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    appearance: textfield;
+  }
+}

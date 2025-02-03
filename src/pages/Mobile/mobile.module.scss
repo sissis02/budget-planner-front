@@ -1,0 +1,19 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+
+.page {
+  width: 100%;
+  height: 100%;
+  // gap: 38px;
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    text-align: center;
+  }
+}
