@@ -35,7 +35,7 @@ Start the server
 ## Environment Variables
 
 To run this project, you will need to : 
-- install and run the project budget-planner-api 
+- install and run the project [Budget Planner Api](https://github.com/sissis02/budget-planner-api) 
 - create a .env file and add the following environment variables to your .env file
 
 `VITE_REACT_APP_API_URL`=http://localhost:30100/api
